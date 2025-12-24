@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Performance Optimizations -->
-    <link rel="modulepreload" href="data:application/octet-stream;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0Jw0KaW1wb3J0IHsgY3JlYXRlUm9vdCB9IGZyb20gJ3JlYWN0LWRvbS9jbGllbnQnDQppbXBvcnQgJy4vaW5kZXguY3NzJw0KaW1wb3J0IEFwcCBmcm9tICcuL0FwcC50c3gnDQppbXBvcnQgeyBCcm93c2VyUm91dGVyIH0gZnJvbSAicmVhY3Qtcm91dGVyLWRvbSI7DQoNCmNyZWF0ZVJvb3QoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKSEpLnJlbmRlcigNCiAgICA8U3RyaWN0TW9kZT4NCiAgICAgIDxCcm93c2VyUm91dGVyPg0KICAgICAgICA8QXBwIC8+DQogICAgICA8L0Jyb3dzZXJSb3V0ZXI+DQogICAgPC9TdHJpY3RNb2RlPg0KKQ0K" />
+    <link rel="modulepreload" href="data:application/octet-stream;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0Jw0KaW1wb3J0IHsgY3JlYXRlUm9vdCB9IGZyb20gJ3JlYWN0LWRvbS9jbGllbnQnDQppbXBvcnQgJy4vaW5kZXguY3NzJw0KaW1wb3J0IEhvbWUgZnJvbSAiLi9Ib21lLnRzeCI7DQppbXBvcnQgQXBwIGZyb20gJy4vQXBwLnRzeCcNCmltcG9ydCB7IFJvdXRlclByb3ZpZGVyLCBjcmVhdGVCcm93c2VyUm91dGVyIH0gZnJvbSAicmVhY3Qtcm91dGVyLWRvbSI7DQppbXBvcnQgQ291cnNlX1JlY29tbWVuZGVyIGZyb20gJy4vQ291cnNlX1JlY29tbWVuZGVyLnRzeCc7DQoNCmNvbnN0IHJvdXRlciA9IGNyZWF0ZUJyb3dzZXJSb3V0ZXIoWw0KICB7DQogICAgcGF0aDogIi9yeWFuX3BvcnRmb2xpbyIsDQogICAgZWxlbWVudDogPEFwcCAvPiwNCiAgICBjaGlsZHJlbjogWw0KICAgICAgew0KICAgICAgICBwYXRoOiAiL3J5YW5fcG9ydGZvbGlvIiwNCiAgICAgICAgZWxlbWVudDogPEhvbWUgLz4sDQogICAgICB9LHsNCiAgICAgICAgcGF0aDogIi9yeWFuX3BvcnRmb2xpby9jb3Vyc2UtcmVjb21tZW5kZXIiLA0KICAgICAgICBlbGVtZW50OiA8Q291cnNlX1JlY29tbWVuZGVyIC8+LA0KICAgICAgfSwNCiAgICBdLA0KICB9LA0KXSk7DQoNCmNyZWF0ZVJvb3QoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKSEpLnJlbmRlcigNCiAgICA8U3RyaWN0TW9kZT4NCiAgICAgICAgPFJvdXRlclByb3ZpZGVyIHJvdXRlcj17cm91dGVyfSAvPg0KICAgIDwvU3RyaWN0TW9kZT4NCikNCg0K" />
     <meta http-equiv="Cache-Control" content="max-age=31536000" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -51,8 +51,24 @@
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap">
     </noscript>
-    <script type="module" crossorigin src="https://ryanliau.github.io/ryan_portfolio/assets/index-jF-eQIwu.js"></script>
-    <link rel="modulepreload" crossorigin href="https://ryanliau.github.io/ryan_portfolio/assets/vendor-BmeWDuoR.js">
+
+<script type="text/javascript">
+  (function (l) {
+    if (l.search[1] === "/") {
+      var decoded = l.search
+        .slice(1)
+        .split("&")
+        .map(function (s) {
+          return s.replace(/~and~/g, "&");
+        })
+        .join("?");
+      window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+    }
+  })(window.location);
+</script>
+
+    <script type="module" crossorigin src="https://ryanliau.github.io/ryan_portfolio/assets/index-CLHrHwlF.js"></script>
+    <link rel="modulepreload" crossorigin href="https://ryanliau.github.io/ryan_portfolio/assets/vendor-B263igMD.js">
     <link rel="stylesheet" crossorigin href="https://ryanliau.github.io/ryan_portfolio/assets/index-kQJbKSsj.css">
   </head>
   <body>
