@@ -82,40 +82,6 @@ const Description = styled.p`
   line-height: 1.7;
 `;
 
-const SocialLinks = styled.div`
-  animation: ${fadeUpKeyframes} 0.5s ease-out 0.6s forwards;
-  opacity: 0;
-  display: flex;
-  gap: ${theme.spacing.md};
-  
-  a {
-    color: ${theme.colors.textLight};
-    font-size: 1.5rem;
-    transition: all ${theme.transitions.default};
-    padding: ${theme.spacing.xs};
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: ${theme.colors.glass.background};
-    
-    &:hover {
-      color: ${theme.colors.light};
-      transform: translateY(-3px);
-      background: ${theme.colors.glass.card};
-      box-shadow: 0 4px 12px rgba(246, 177, 122, 0.2);
-    }
-  }
-
-  @media (min-width: ${theme.breakpoints.md}) {
-    gap: ${theme.spacing.lg};
-    
-    a {
-      font-size: 1.75rem;
-    }
-  }
-`;
-
 export const Hero = () => {
   return (
     <HeroSection id="hero" role="region" aria-label="Introduction">

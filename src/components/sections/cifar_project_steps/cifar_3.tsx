@@ -110,27 +110,6 @@ const TechStack = styled.div`
   }
 `;
 
-const TechTag = styled.span`
-  background: ${theme.colors.glass.card};
-  color: ${theme.colors.accent};
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: clamp(0.75rem, 2vw, 0.85rem);
-  font-weight: 500;
-  transition: all ${theme.transitions.default};
-
-  @media (min-width: ${theme.breakpoints.md}) {
-    padding: 6px 12px;
-  }
-
-  &:hover {
-    background: ${theme.colors.gradient.accent};
-    color: ${theme.colors.textDark};
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(246, 177, 122, 0.2);
-  }
-`;
-
 const projects = [
   {
     id: 1,

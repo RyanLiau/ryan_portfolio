@@ -15,29 +15,7 @@ const ProjectsSection = styled.section`
   }
 `;
 
-const SectionTitle = styled(motion.h2)`
-  text-align: center;
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  margin-bottom: calc(${theme.spacing.xl} * 1.5);
-  color: ${theme.colors.textLight};
-  position: relative;
-  
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -${theme.spacing.md};
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background-color: ${theme.colors.accent};
-    border-radius: 2px;
-  }
 
-  @media (min-width: ${theme.breakpoints.md}) {
-    margin-bottom: calc(${theme.spacing.xl} * 2);
-  }
-`;
 
 const ProjectGrid = styled.div`
   display: grid;
@@ -154,27 +132,6 @@ const TechTag = styled.span`
   }
 `;
 
-const ProjectLinks = styled.div`
-  display: flex;
-  gap: ${theme.spacing.md};
-  margin-top: auto;
-  padding-top: ${theme.spacing.md};
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  
-  a {
-    color: ${theme.colors.accent};
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    transition: all ${theme.transitions.default};
-    padding: ${theme.spacing.xs};
-    border-radius: 4px;
-    
-    &:hover {
-      color: ${theme.colors.light};
-      background: ${theme.colors.glass.card};
-      transform: translateY(-2px);
-    }
-  }
-`;
 
 const projects = [
   {

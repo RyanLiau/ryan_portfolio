@@ -15,29 +15,7 @@ const ProjectsSection = styled.section`
   }
 `;
 
-const SectionTitle = styled(motion.h2)`
-  text-align: center;
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  margin-bottom: calc(${theme.spacing.xl} * 1.5);
-  color: ${theme.colors.textLight};
-  position: relative;
-  
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -${theme.spacing.md};
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background-color: ${theme.colors.accent};
-    border-radius: 2px;
-  }
 
-  @media (min-width: ${theme.breakpoints.md}) {
-    margin-bottom: calc(${theme.spacing.xl} * 2);
-  }
-`;
 
 const ProjectGrid = styled.div`
   display: grid;
