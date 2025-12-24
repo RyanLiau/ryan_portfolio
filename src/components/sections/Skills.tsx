@@ -4,18 +4,19 @@ import { theme } from '../../styles/theme';
 import { 
   FaReact, 
   FaNodeJs, 
-  FaDatabase, 
   FaDocker,
-  FaGitAlt,
-  FaAws
+  FaAws,
+  FaPython,
+  FaHtml5,
+  FaCss3Alt,
+  FaGithub
 } from 'react-icons/fa';
 import { 
-  SiTypescript,
-  SiJavascript,
-  SiPython,
-  SiMongodb,
-  SiPostgresql,
-  SiRedux
+  SiTensorflow,
+  SiTableau,
+  SiMysql,
+  SiAntdesign,
+  SiGooglecloud
 } from 'react-icons/si';
 
 const SkillsSection = styled.section`
@@ -127,7 +128,7 @@ const SkillItem = styled(motion.div)`
   display: flex;
   align-items: center;
   gap: ${theme.spacing.sm};
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-size: clamp(0.5rem, 2vw, 0.8rem);
   padding: ${theme.spacing.md};
   border-radius: 12px;
   transition: all ${theme.transitions.default};
@@ -153,23 +154,23 @@ const SkillItem = styled(motion.div)`
 
 const skillCategories = [
   {
-    title: 'Frontend',
+    title: 'Analytics/AI',
     icon: <FaReact />,
     skills: [
-      { name: 'React', icon: <FaReact /> },
-      { name: 'TypeScript', icon: <SiTypescript /> },
-      { name: 'JavaScript', icon: <SiJavascript /> },
-      { name: 'Redux', icon: <SiRedux /> },
+      { name: 'Tensorflow', icon: <SiTensorflow  /> },
+      { name: 'Python3', icon: <FaPython  /> },
+      { name: 'Tableau', icon: <SiTableau  /> },
+      { name: 'MySQL', icon: <SiMysql  /> },
     ],
   },
   {
-    title: 'Backend',
+    title: 'Fullstack',
     icon: <FaNodeJs />,
     skills: [
-      { name: 'Node.js', icon: <FaNodeJs /> },
-      { name: 'Python', icon: <SiPython /> },
-      { name: 'MongoDB', icon: <SiMongodb /> },
-      { name: 'PostgreSQL', icon: <SiPostgresql /> },
+      { name: 'ReactJS', icon: <FaReact   /> },
+      { name: 'Antd', icon: <SiAntdesign   /> },
+      { name: 'HTML5', icon: <FaHtml5  /> },
+      { name: 'CSS3', icon: <FaCss3Alt  /> },
     ],
   },
   {
@@ -177,9 +178,9 @@ const skillCategories = [
     icon: <FaDocker />,
     skills: [
       { name: 'Docker', icon: <FaDocker /> },
-      { name: 'Git', icon: <FaGitAlt /> },
+      { name: 'Github', icon: <FaGithub /> },
       { name: 'AWS', icon: <FaAws /> },
-      { name: 'CI/CD', icon: <FaDatabase /> },
+      { name: 'Google Cloud', icon: <SiGooglecloud  /> },
     ],
   },
 ];

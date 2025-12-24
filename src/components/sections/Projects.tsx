@@ -53,7 +53,7 @@ const ProjectGrid = styled.div`
   }
 `;
 
-const ProjectCard = styled(motion.div)`
+const ProjectCard = styled(motion.a)`
   background: ${theme.colors.glass.background};
   backdrop-filter: blur(8px);
   border-radius: 12px;
@@ -178,21 +178,27 @@ const ProjectLinks = styled.div`
 const projects = [
   {
     id: 1,
-    title: "Project One",
-    description: "A full-stack web application with real-time features and modern UI/UX design.",
-    image: "https://via.placeholder.com/400x200",
-    techStack: ["React", "Node.js", "MongoDB", "Socket.IO"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    title: "Course Recommender",
+    description: "An application that recommends relevant courses for people who wish to upskill",
+    image: "src/assets/Project_1.png",
+    techStack: ["NLP", "Flask", "Docker", "Google Cloud","MySQL","Python3"
+    ],
+    liveUrl: "/ryan_portfolio/course-recommender",
   },
   {
     id: 2,
-    title: "Project Two",
-    description: "Mobile-first e-commerce platform with seamless payment integration.",
-    image: "https://via.placeholder.com/400x200",
-    techStack: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    title: "CIFAR 10 Image Generation",
+    description: "Utilizing a GAN model created with Tensorflow to generate images based off the CIFAR 10 dataset",
+    image: "src/assets/Project_2.png",
+    techStack: ["Tensorflow", "Python3", "Keras","Pandas","Numpy","Matplotlib"],
+    liveUrl: "/ryan_portfolio/cifar-gan",
+  },
+    {
+    id: 3,
+    title: "Customer Clustering",
+    description: "Segregating (fake) customers into distinct clusters, such that advice can be given on how to best advertise to them",
+    image: "src/assets/Project_3.png",
+    techStack: ["Jupyter", "Seaborn", "Sklearn"]
   },
 ];
 
@@ -240,15 +246,16 @@ const Projects = () => {
           <ProjectGrid role="list">
           {projects.map((project) => (
             <ProjectCard 
+              href={project.liveUrl}
               key={project.id} 
               variants={itemVariants}
               role="listitem"
               aria-labelledby={`project-title-${project.id}`}
             >
               <ProjectImage 
-                imageUrl={project.image} 
-                role="img" 
-                aria-label={`Screenshot of ${project.title}`} 
+                imageUrl={project.image}
+                role="img"
+                aria-label={`Screenshot of ${project.title}`}
               />
               <ProjectContent>
                 <ProjectTitle id={`project-title-${project.id}`}>{project.title}</ProjectTitle>
@@ -259,24 +266,8 @@ const Projects = () => {
                   ))}
                 </TechStack>
                 <ProjectLinks>
-                  <a 
-                    href={project.githubUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label={`View ${project.title} source code on GitHub`}
-                  >
-                    <FaGithub aria-hidden="true" />
-                    <span className="sr-only">GitHub repository</span>
-                  </a>
-                  <a 
-                    href={project.liveUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label={`Visit ${project.title} live site`}
-                  >
-                    <FaExternalLinkAlt aria-hidden="true" />
-                    <span className="sr-only">Live site</span>
-                  </a>
+                    <FaExternalLinkAlt aria-hidden="true" style={{color: theme.colors.accent}}/>
+                  {/* </a> */}
                 </ProjectLinks>
               </ProjectContent>
             </ProjectCard>

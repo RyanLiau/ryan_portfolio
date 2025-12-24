@@ -201,17 +201,17 @@ const Contact = () => {
               role="paragraph"
             >
               I'm always interested in hearing about new projects and opportunities.
-              Whether you have a question or just want to say hi, feel free to reach out!
+              Feel free to reach out!
             </ContactText>
             <ContactEmail 
-              href="mailto:your.email@example.com"
+              href="mailto:lcfryan.20@gmail.com"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              aria-label="Send me an email at your.email@example.com"
+              aria-label="Send me an email at lcfryan.20@gmail.com"
             >
               <FaEnvelope aria-hidden="true" />
-              <span>your.email@example.com</span>
+              <span>lcfryan.20@gmail.com</span>
             </ContactEmail>
             <SocialLinks 
               variants={itemVariants}
@@ -219,7 +219,7 @@ const Contact = () => {
               aria-label="Social media links"
             >
               <SocialLink 
-                href="https://github.com"
+                href="https://github.com/RyanLiau"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
@@ -230,7 +230,7 @@ const Contact = () => {
                 <span className="sr-only">GitHub</span>
               </SocialLink>
               <SocialLink 
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/ryan-liau-b34575232/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
@@ -240,7 +240,7 @@ const Contact = () => {
                 <FaLinkedin aria-hidden="true" />
                 <span className="sr-only">LinkedIn</span>
               </SocialLink>
-              <SocialLink 
+              {/* <SocialLink 
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -250,7 +250,7 @@ const Contact = () => {
               >
                 <FaTwitter aria-hidden="true" />
                 <span className="sr-only">Twitter</span>
-              </SocialLink>
+              </SocialLink> */}
             </SocialLinks>
           </ContactContent>
         </motion.div>

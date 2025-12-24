@@ -189,10 +189,10 @@ export const Layout = ({ children }: LayoutProps) => {
               role="heading"
               aria-level={1}
             >
-              Portfolio
+              Ryan Liau
             </Logo>
             <NavLinks role="list">
-              <a href="#about" role="listitem" aria-label="About section">About</a>
+              <a href="#hero" role="listitem" aria-label="About section">About</a>
               <a href="#projects" role="listitem" aria-label="Projects section">Projects</a>
               <a href="#skills" role="listitem" aria-label="Skills section">Skills</a>
               <a href="#contact" role="listitem" aria-label="Contact section">Contact</a>
@@ -206,7 +206,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <FloatingNav />
       <Footer role="contentinfo">
         <div className="container">
-          <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Ryan Liau. All rights reserved.</p>
         </div>
       </Footer>
     </LayoutWrapper>
