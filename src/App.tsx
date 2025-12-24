@@ -7,8 +7,8 @@ import Cifar from "./Cifar";
 function App() {
   return (
     <Routes>
-      <Route path="/ryan_portfolio" element={<Course_Recommender />} />
-      <Route path="/ryan_portfolio/course-recommender" element={<Home/>} />
+      <Route path="/ryan_portfolio" element={<Home />} />
+      <Route path="/ryan_portfolio/course-recommender" element={<Course_Recommender />} />
       <Route path="/ryan_portfolio/cifar-gan" element={<Cifar />} />
     </Routes>
   );
