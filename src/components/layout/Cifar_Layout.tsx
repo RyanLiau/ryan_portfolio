@@ -191,7 +191,7 @@ export const Layout = ({ children }: LayoutProps) => {
               transition={{ duration: 0.5 }}
               role="heading"
               aria-level={1}
-              href="/ryan_portfolio"
+              href="/ryan_portfolio/"
             >
               Ryan Liau
             </Logo>

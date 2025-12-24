@@ -183,7 +183,7 @@ const projects = [
     image: "src/assets/Project_1.png",
     techStack: ["NLP", "Flask", "Docker", "Google Cloud","MySQL","Python3"
     ],
-    liveUrl: "/ryan_portfolio/course-recommender",
+    liveUrl: "/ryan_portfolio/course-recommender/",
   },
   {
     id: 2,
@@ -191,7 +191,7 @@ const projects = [
     description: "Utilizing a GAN model created with Tensorflow to generate images based off the CIFAR 10 dataset",
     image: "src/assets/Project_2.png",
     techStack: ["Tensorflow", "Python3", "Keras","Pandas","Numpy","Matplotlib"],
-    liveUrl: "/ryan_portfolio/cifar-gan",
+    liveUrl: "/ryan_portfolio/cifar-gan/",
   },
     {
     id: 3,
