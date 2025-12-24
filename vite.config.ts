@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import compression from 'vite-plugin-compression'
 import { visualizer } from 'rollup-plugin-visualizer'
 
-// https://vitejs.dev/config/
+// https://vitejs.dev/config
 export default defineConfig({
   base: '/ryan_portfolio/',
   plugins: [
