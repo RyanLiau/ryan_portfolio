@@ -5,7 +5,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './ryan_portfolio/',
+  base: 'https://ryanliau.github.io/ryan_portfolio/',
   plugins: [
     react({
       babel: {
