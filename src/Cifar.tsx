@@ -16,7 +16,7 @@ function Cifar() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Layout>
-        {/* Hero section is critical for LCP, so keep it eager loaded */}
+        {/* Hero section is critical for LCP, so keep it eager loadeddfadf */}
         <Hero />
         <Projects />
         <Projects2 />

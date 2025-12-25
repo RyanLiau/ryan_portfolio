@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { theme } from '../../styles/theme';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import project_1 from '../../assets/images/project_1.png';
+import Project_1 from '../../assets/images/Project_1.png';
 
 const ProjectsSection = styled.section`
   min-height: 100vh;
@@ -181,7 +181,7 @@ const projects = [
     id: 1,
     title: "Course Recommender",
     description: "An application that recommends relevant courses for people who wish to upskill",
-    image: project_1,
+    image: Project_1,
     techStack: ["NLP", "Flask", "Docker", "Google Cloud","MySQL","Python3"
     ],
     liveUrl: "/ryan_portfolio/course-recommender/",
