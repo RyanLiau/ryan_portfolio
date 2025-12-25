@@ -9,17 +9,12 @@ import Course_Recommender from './Course_Recommender.tsx';
 const router = createBrowserRouter([
   {
     path: "/ryan_portfolio/",
-    element: <App />,
-    children: [
-      {
-        path: "/ryan_portfolio/",
-        element: <Home />,
-      },{
-        path: "/ryan_portfolio/course-recommender/",
-        element: <Course_Recommender />,
-      },
-    ],
+    element: <Home />
   },
+  {
+    path: "/ryan_portfolio/course-recommender/",
+    element: <Home />,
+  }
 ]);
 
 createRoot(document.getElementById('root')!).render(
