@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { theme } from '../../../styles/theme';
+import step_img from "../../../assets/cluster/cluster_1.png"
 
 const ProjectsSection = styled.section`
   min-height: 50vh;
@@ -136,9 +137,8 @@ const projects = [
     id: 1,
     title: "",
     description: "",
-    image: "src/assets/cifar/cifar_4.png",
+    image: step_img,
     techStack: [],
-    // githubUrl: "https://github.com",
     liveUrl: "",
   }
 ];
@@ -166,7 +166,7 @@ const Projects = () => {
   };
 
   return (
-    <ProjectsSection id="4" role="region" aria-label="Featured Projects">
+    <ProjectsSection id="1" role="region">
       <div className="container">
         <motion.div
           variants={containerVariants}
@@ -196,17 +196,19 @@ const Projects = () => {
               aria-labelledby={`project-title-1`}
             >
             <ProjectContent>
-                <ProjectTitle id={`project-title-1`}>Training and Model Evaluation</ProjectTitle>
+                <ProjectTitle id={`project-title-1`}>Data Exploration/Preprocessing</ProjectTitle>
                 <ProjectDescription> 
-                 The following 3 are used to determine the stability of the model throughout training:<br/>
-    - Discriminator Loss<br/>
-    - Discriminator Accuracy<br/>
-    - Generator Loss<br/><br/>
-    Additionaly, I implemented the Frechet Inception Distance to measure the quality of the GAN's models by comparing them to 
-    InceptionV3, which takes the activations of the model's last pooling layer and calculates them for real and generated images
+                  I explored the contents of the dataset to understand what best practices can be applied: <br/><br/>
+                  - Displaying an image for each label to get a general idea<br/>
+                  - Transforming each of those images into greyscale to get a median image and observe its shape for each label<br/>
+                  - A showcase of the distribution of labels, ensuring that the data is evently distributed<br/>
+                  <br/>
+                  Afterward, I convert the images to float32 and scale it within -1 to 1 to prepare them as input for the GAN model.
                 </ProjectDescription>
                 <TechStack role="list" aria-label={`Technologies used in Feature Engineering`}>
+                <TechTag role="listitem">Tensorflow</TechTag>
                 <TechTag role="listitem">Matplotlib</TechTag>
+                <TechTag role="listitem">Numpy</TechTag>
                 </TechStack>
             </ProjectContent>
             </ProjectCard>

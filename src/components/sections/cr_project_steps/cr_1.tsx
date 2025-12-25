@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { theme } from '../../../styles/theme';
+import step_img from "../../../assets/course_recommender/cr_1.png"
 
 const ProjectsSection = styled.section`
   min-height: 50vh;
@@ -137,7 +138,7 @@ const projects = [
     id: 1,
     title: "",
     description: "",
-    image: "src/assets/course_recommender/cr_1.png",
+    image: step_img,
     techStack: [],
     // githubUrl: "https://github.com",
     liveUrl: null,

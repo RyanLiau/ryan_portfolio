@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { theme } from '../../styles/theme';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import Project_1 from '../../assets/images/Project_1.png';
+import Project_2 from '../../assets/images/Project_2.png';
+import Project_3 from '../../assets/images/Project_3.png';
 
 const ProjectsSection = styled.section`
   min-height: 100vh;
@@ -190,7 +192,7 @@ const projects = [
     id: 2,
     title: "CIFAR 10 Image Generation",
     description: "Utilizing a GAN model created with Tensorflow to generate images based off the CIFAR 10 dataset",
-    image: "src/assets/images/project_2.png",
+    image: Project_2,
     techStack: ["Tensorflow", "Python3", "Keras","Pandas","Numpy","Matplotlib"],
     liveUrl: "/ryan_portfolio/cifar-gan/",
   },
@@ -198,7 +200,7 @@ const projects = [
     id: 3,
     title: "Customer Clustering",
     description: "Segregating (fake) customers into distinct clusters, such that advice can be given on how to best advertise to them",
-    image: "src/assets/images/project_3.png",
+    image: Project_3,
     techStack: ["Jupyter", "Seaborn", "Sklearn"]
   },
 ];

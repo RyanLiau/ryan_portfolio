@@ -4,7 +4,8 @@ import './index.css'
 import Home from "./Home.tsx";
 // import App from './App.tsx'
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-// import Course_Recommender from './Course_Recommender.tsx';
+import Course_Recommender from './Course_Recommender.tsx';
+import Cifar from './Cifar.tsx'
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/ryan_portfolio/course-recommender/",
-    element: <Home />,
+    element: <Course_Recommender />,
+  },
+    {
+    path: "/ryan_portfolio/cifar-gan/",
+    element: <Cifar />,
   }
 ]);
 
