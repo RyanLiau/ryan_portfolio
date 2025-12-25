@@ -180,7 +180,7 @@ const projects = [
     id: 1,
     title: "Course Recommender",
     description: "An application that recommends relevant courses for people who wish to upskill",
-    image: "./src/assets/images/Project_1.png",
+    image: "./src/assets/images/project_1.png",
     techStack: ["NLP", "Flask", "Docker", "Google Cloud","MySQL","Python3"
     ],
     liveUrl: "/ryan_portfolio/course-recommender/",
@@ -189,7 +189,7 @@ const projects = [
     id: 2,
     title: "CIFAR 10 Image Generation",
     description: "Utilizing a GAN model created with Tensorflow to generate images based off the CIFAR 10 dataset",
-    image: "src/assets/images/Project_2.png",
+    image: "./src/assets/images/project_2.png",
     techStack: ["Tensorflow", "Python3", "Keras","Pandas","Numpy","Matplotlib"],
     liveUrl: "/ryan_portfolio/cifar-gan/",
   },
@@ -197,7 +197,7 @@ const projects = [
     id: 3,
     title: "Customer Clustering",
     description: "Segregating (fake) customers into distinct clusters, such that advice can be given on how to best advertise to them",
-    image: "src/assets/images/Project_3.png",
+    image: "./src/assets/images/project_3.png",
     techStack: ["Jupyter", "Seaborn", "Sklearn"]
   },
 ];
