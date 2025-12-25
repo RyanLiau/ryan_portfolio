@@ -180,7 +180,7 @@ const projects = [
     id: 1,
     title: "Course Recommender",
     description: "An application that recommends relevant courses for people who wish to upskill",
-    image: "src/assets/images/Project_1.png",
+    image: "./src/assets/images/Project_1.png",
     techStack: ["NLP", "Flask", "Docker", "Google Cloud","MySQL","Python3"
     ],
     liveUrl: "/ryan_portfolio/course-recommender/",
