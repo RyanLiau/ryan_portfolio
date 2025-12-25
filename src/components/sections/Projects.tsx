@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { theme } from '../../styles/theme';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import project_1 from '../../../src/assets/images/project_1.png';
+import project_1 from '../../assets/images/project_1.png';
 
 const ProjectsSection = styled.section`
   min-height: 100vh;
